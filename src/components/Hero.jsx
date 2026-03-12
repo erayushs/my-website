@@ -40,7 +40,7 @@ export default function Hero() {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        padding: '0 clamp(24px, 5vw, 72px)',
+        padding: '0 clamp(24px, 6vw, 96px)',
         position: 'relative',
         overflow: 'hidden',
       }}
@@ -96,15 +96,16 @@ export default function Hero() {
         style={{
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'center',
-          gap: 'clamp(48px, 6vw, 96px)',
+          justifyContent: 'space-between',
+          gap: 'clamp(32px, 6vw, 80px)',
           width: '100%',
+          maxWidth: '1100px',
           opacity: visible ? 1 : 0,
           transition: 'opacity 0.3s',
         }}
       >
       {/* Left column */}
-      <div style={{ flex: 1, minWidth: 0, maxWidth: '560px' }}>
+      <div style={{ flex: 1, minWidth: 0 }}>
         {/* Pre-title tag */}
         <div
           style={{
@@ -338,7 +339,6 @@ export default function Hero() {
       <div
         style={{
           flexShrink: 0,
-          paddingTop: '0',
           animation: visible ? 'fadeIn 0.9s ease 0.5s forwards' : 'none',
           animationFillMode: 'both',
           opacity: 0,
@@ -348,8 +348,8 @@ export default function Hero() {
         <div
           style={{
             position: 'relative',
-            width: 'clamp(280px, 30vw, 420px)',
-            height: 'clamp(280px, 30vw, 420px)',
+            width: 'clamp(220px, 22vw, 320px)',
+            height: 'clamp(220px, 22vw, 320px)',
           }}
         >
           {/* Amber ring */}
