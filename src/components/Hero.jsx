@@ -137,7 +137,7 @@ export default function Hero() {
               color: 'var(--accent)',
             }}
           >
-            Available for opportunities
+            Turning coffee into clean React code
           </span>
         </div>
 
