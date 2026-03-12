@@ -33,11 +33,16 @@ function ProjectCard({ project, index }) {
   const [ref, inView] = useInView();
   const [hovered, setHovered] = useState(false);
 
+  const handleCardClick = () => {
+    if (project.demo) window.open(project.demo, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <div
       ref={ref}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onClick={handleCardClick}
       style={{
         background: hovered ? 'var(--surface-2)' : 'var(--surface)',
         border: `1px solid ${hovered ? 'var(--border-light)' : 'var(--border)'}`,
@@ -45,7 +50,7 @@ function ProjectCard({ project, index }) {
         padding: '28px',
         position: 'relative',
         overflow: 'hidden',
-        cursor: 'default',
+        cursor: project.demo ? 'pointer' : 'default',
         opacity: inView ? 1 : 0,
         transform: inView ? 'translateY(0)' : 'translateY(28px)',
         transition: `opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${index * 0.08}s,
@@ -68,6 +73,25 @@ function ProjectCard({ project, index }) {
           transition: 'background 0.35s',
         }}
       />
+
+      {/* Live indicator */}
+      {project.demo && (
+        <div style={{
+          position: 'absolute',
+          top: '14px',
+          right: '14px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '5px',
+          opacity: hovered ? 1 : 0,
+          transform: hovered ? 'translateY(0)' : 'translateY(-4px)',
+          transition: 'all 0.2s',
+          pointerEvents: 'none',
+        }}>
+          <span style={{ fontSize: '10px', color: 'var(--accent)', letterSpacing: '0.08em', fontWeight: 500 }}>LIVE</span>
+          <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--accent)', boxShadow: '0 0 6px var(--accent)' }} />
+        </div>
+      )}
 
       {/* Header */}
       <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '14px', gap: '12px' }}>
