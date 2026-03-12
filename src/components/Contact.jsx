@@ -112,7 +112,7 @@ export default function Contact() {
               { icon: Mail,     label: 'Email',    value: data.email,                      href: `mailto:${data.email}` },
               { icon: Phone,    label: 'Phone',    value: data.phone,                      href: `tel:${data.phone}` },
               { icon: Github,   label: 'GitHub',   value: 'github.com/erayushs',           href: data.github },
-              { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/erayushsingh', href: data.linkedin },
+              { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/ayushvs', href: data.linkedin },
               { icon: MapPin,   label: 'Location', value: 'Noida, Uttar Pradesh',          href: null },
             ].map(({ icon: Icon, label, value, href }, i) => (
               <ContactRow key={label} icon={Icon} label={label} value={value} href={href} index={i} inView={inView} />

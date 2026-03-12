@@ -5,9 +5,9 @@ export const data = {
   email: "iamayushvs@gmail.com",
   phone: "+91 8874617344",
   github: "https://github.com/erayushs",
-  linkedin: "https://linkedin.com/in/erayushsingh",
+  linkedin: "https://www.linkedin.com/in/ayushvs/",
   summary:
-    "I craft fast, accessible, and beautiful web experiences. At Virtual Intelligence, I pushed mobile Lighthouse scores from 11 to 70 — and I'm always looking for the next performance mountain to climb.",
+    "Frontend developer who shipped a 536% mobile performance jump on a live production app — then kept going. I build fast, scalable React interfaces that are as clean under the hood as they look on screen.",
 
   stats: [
     { value: "11→70", label: "Lighthouse Score", sub: "Mobile performance jump" },
@@ -24,12 +24,12 @@ export const data = {
       period: "Sep 2025 – Present",
       current: true,
       highlights: [
-        "Pushed mobile Lighthouse score from 11 to 70 via React optimization, bundle reduction, and CSS cleanup.",
-        "Migrated app from CRA to Vite — dramatically improved DX and HMR performance.",
-        "Standardized UI with Tailwind CSS + shadcn/ui, stripping redundant CSS libraries.",
-        "Integrated APIs via Axios & React Query; built large dynamic forms with React Hook Form.",
-        "Implemented mobile-first responsive design with device-appropriate UI patterns.",
-        "Worked on BMA — a React business management platform for leads, projects, and sales.",
+        "Took Invest Mango mobile Lighthouse score from 11 to 70 — a 536% improvement — by eliminating render-blocking resources, lazy-loading routes, and localizing state to reduce re-render cascades across the app.",
+        "Architected BMA's frontend from the ground up: a multi-module React platform handling leads, projects, teams, and sales pipelines — all in a single cohesive codebase.",
+        "Killed CRA and moved BMA to Vite — cold start dropped from ~40s to under 2s, HMR became instant, and the team's dev experience transformed overnight.",
+        "Replaced a patchwork of 4 conflicting CSS libraries with a unified Tailwind CSS + shadcn/ui system, cutting stylesheet size and making every new component consistent by default.",
+        "Built complex, multi-step dynamic forms with React Hook Form and Zod validation — handling lead intake, project creation, and team management workflows with zero UX friction.",
+        "Integrated React Query for all server-state — eliminated redundant API calls, added background refetching, and gave BMA's data layer predictable loading and error states throughout.",
       ],
     },
     {
