@@ -84,10 +84,11 @@ export default function Hero() {
           gap: '10px',
           opacity: 0.3,
         }}
+        className="portfolio-label"
       >
         <span style={{ width: '40px', height: '1px', background: 'var(--text-muted)' }} />
         <span style={{ fontSize: '10px', letterSpacing: '0.2em', textTransform: 'uppercase', fontWeight: 500 }}>
-          Portfolio 2025
+          Portfolio 2026
         </span>
       </div>
 
@@ -348,8 +349,8 @@ export default function Hero() {
         <div
           style={{
             position: 'relative',
-            width: 'clamp(220px, 22vw, 320px)',
-            height: 'clamp(220px, 22vw, 320px)',
+            width: 'clamp(260px, 28vw, 380px)',
+            height: 'clamp(260px, 28vw, 380px)',
           }}
         >
           {/* Amber ring */}
@@ -436,6 +437,7 @@ export default function Hero() {
         }
         @media (max-width: 768px) {
           .hero-photo-col { display: none !important; }
+          .portfolio-label { display: none !important; }
         }
       `}</style>
     </section>
