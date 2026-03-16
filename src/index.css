@@ -13,6 +13,25 @@
   --accent-hover: #e8be55;
   --accent-dim: rgba(212, 168, 57, 0.1);
   --accent-border: rgba(212, 168, 57, 0.25);
+  --navbar-scrolled-bg: rgba(8, 8, 11, 0.92);
+  --mobile-menu-bg: rgba(8, 8, 11, 0.97);
+}
+
+[data-theme="light"] {
+  --bg: #f5f3ef;
+  --surface: #eceae4;
+  --surface-2: #e3e0d8;
+  --border: #d0ccc0;
+  --border-light: #b8b4a8;
+  --text: #1a1a20;
+  --text-muted: #5a5a6a;
+  --text-dim: #8a8a9a;
+  --accent: #b8922a;
+  --accent-hover: #c9a030;
+  --accent-dim: rgba(184, 146, 42, 0.12);
+  --accent-border: rgba(184, 146, 42, 0.35);
+  --navbar-scrolled-bg: rgba(245, 243, 239, 0.92);
+  --mobile-menu-bg: rgba(245, 243, 239, 0.97);
 }
 
 *, *::before, *::after {
