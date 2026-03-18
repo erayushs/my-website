@@ -2,7 +2,7 @@
 
 Personal portfolio website built with **Vite + React + Tailwind CSS**.
 
-🔗 **Live:** [https://aysng.in/](https://aysng.in/) *(deploy to update)*
+🔗 **Live:** [https://aysng.in/](https://aysng.in/)
 
 ---
 
