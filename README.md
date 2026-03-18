@@ -2,7 +2,7 @@
 
 Personal portfolio website built with **Vite + React + Tailwind CSS**.
 
-🔗 **Live:** [erayushs.github.io/my-website](https://erayushs.github.io/my-website) *(deploy to update)*
+🔗 **Live:** [https://aysng.in/](https://aysng.in/) *(deploy to update)*
 
 ---
 
